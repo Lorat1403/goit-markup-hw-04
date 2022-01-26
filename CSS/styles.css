@@ -31,7 +31,7 @@ body {
     padding-top: 24px;
     padding-bottom: 25px;
     background-color: #ffffff;
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -140,6 +140,7 @@ body {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    max-width: 1600px;
 }
 
 
@@ -147,11 +148,10 @@ body {
 
 .cap {
     display: flex;
-    background-color: #2f303a;
+    background-color: #c4c4c4;
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 .cap-title {
@@ -206,14 +206,11 @@ body {
 
 .qualities {
     padding-bottom: 0;
-    max-width: 1200px;
 }
 
 .qualities-list {
     display: flex;
     margin: 0 auto;
-    /* padding: 0; */
-    max-width: 1200px;
 }
 
 .qualities-list>.qualities-item {
@@ -226,7 +223,6 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: 10px;
     color: var(--first-title-color);
 }
@@ -247,16 +243,13 @@ body {
 /* -About- */
 
 .about {
-    /* padding-bottom: ; */
     margin: 0 auto;
-    max-width: 1200px;
 }
 
 .about-list {
     display: flex;
     margin-top: 50px;
-    /* margin: 0 auto; */
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 .about-item+.about-item {
@@ -272,10 +265,6 @@ body {
 
 
 /* --our command --*/
-
-.command {
-    background-color: #f5f4fa;
-}
 
 .command-title {
     margin-bottom: 50px;
@@ -402,6 +391,7 @@ body {
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 1600px;
 }
 
 
