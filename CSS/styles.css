@@ -327,6 +327,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--first-title-color);
     background-color: #f5f4fa;
+    border: none;
 }
 
 .filter-btn:hover,
