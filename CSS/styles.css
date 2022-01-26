@@ -20,7 +20,6 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
 }
 
 
@@ -117,11 +116,6 @@ body {
     padding-left: 50px;
 }
 
-
-/* .header-mail {
-    padding-left: auto;
-} */
-
 .current {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -140,7 +134,6 @@ body {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    max-width: 1600px;
 }
 
 
@@ -218,7 +211,6 @@ body {
 }
 
 .qualities-title {
-    font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -249,7 +241,6 @@ body {
 .about-list {
     display: flex;
     margin-top: 50px;
-    /* max-width: 1200px; */
 }
 
 .about-item+.about-item {
@@ -265,6 +256,10 @@ body {
 
 
 /* --our command --*/
+
+.commands {
+    background-color: #f5f4fa;
+}
 
 .command-title {
     margin-bottom: 50px;
@@ -344,8 +339,8 @@ body {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -1 * var(--projects-list-gap);
-    margin-left: -1 * var(--projects-list-gap);
+    margin-top: calc(-1 * var(--projects-list-gap));
+    margin-left: calc(-1 * var(--projects-list-gap));
 }
 
 .projects-list>.projects-item {
@@ -391,22 +386,10 @@ body {
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 1600px;
 }
-
-
-/* .footer-container {
-    display: flex;
-} */
 
 .footer .nav-logo {
     color: #ffffff;
-    /* margin-bottom: 20px; */
-}
-
-.footer-list {
-    margin-top: 9px;
-    margin-bottom: 9px;
 }
 
 .footer-list a {
@@ -434,9 +417,14 @@ body {
     text-decoration: none;
     color: #ffffff;
     margin-top: 20px;
+    margin-bottom: 9px;
 }
 
 .address:hover,
 .address:focus {
     color: #2196f3;
+}
+
+.footer-item+.footer-item {
+    margin-top: 9px;
 }
