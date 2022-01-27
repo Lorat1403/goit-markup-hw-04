@@ -141,11 +141,19 @@ body {
 
 .cap {
     display: flex;
-    background-color: #c4c4c4;
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
+    background-color: #c4c4c4;
 }
+
+
+/* .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(../images/бэкфон.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
 
 .cap-title {
     font-size: 44px;
@@ -271,10 +279,10 @@ body {
 
 .command-list {
     display: flex;
+    margin-left: -30px;
 }
 
 .command-list>.command-item {
-    margin-top: 50px;
     margin-left: 30px;
 }
 
@@ -282,7 +290,7 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
