@@ -102,6 +102,11 @@ body {
     color: var(--first-text-color);
 }
 
+.hm-icon {
+    width: 16px;
+    height: 12px;
+}
+
 .header-mail:hover,
 .header-tel:hover,
 .header-mail:focus,
@@ -219,6 +224,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: 30px;
     margin-bottom: 10px;
     color: var(--first-title-color);
 }
@@ -233,6 +239,19 @@ body {
 
 .qualities-item+.qualities-item {
     margin-left: 30px;
+}
+
+.q-icons {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    background-color: #f5f4fa;
+}
+
+.q-icon {
+    margin-top: 25px;
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -304,6 +323,73 @@ body {
     line-height: 1.9;
     letter-spacing: 0.03em;
     color: var(--first-text-color);
+}
+
+.command-links {
+    display: flex;
+}
+
+.command-icons {
+    display: inline-flex;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.command-icon {
+    width: 44px;
+    height: 44px;
+}
+
+.c-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/*  customers */
+
+.customers-title {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.customers-list {
+    display: flex;
+}
+
+.customers-item+.customers-item {
+    margin-left: 30px;
+}
+
+.customers-item {
+    width: 170px;
+    height: 92px;
+    color: #afb1b8;
+    box-sizing: border-box;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
+.cust-icons {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+    /* color: #afb1b8; */
+    margin-top: 16px;
+    margin-left: 32px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.customers-item:hover,
+.customers-item:focus {
+    fill: #2196f3;
+    border-color: #2196f3;
 }
 
 
