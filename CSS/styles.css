@@ -105,6 +105,7 @@ body {
 .hm-icon {
     width: 16px;
     height: 12px;
+    fill: currentColor;
 }
 
 .header-mail:hover,
@@ -325,10 +326,6 @@ body {
     color: var(--first-text-color);
 }
 
-.command-links {
-    display: flex;
-}
-
 .command-icons-list {
     display: flex;
     margin-left: 32px;
@@ -337,14 +334,19 @@ body {
     justify-content: center;
 }
 
-.command-icon {
+.command-icon-item {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    color: #afb1b8;
 }
 
-.command-icon:hover,
-.command-icon:focus {
+.command-icon-item+.command-icon-item {
+    margin-left: 10px;
+}
+
+.command-icon-item:hover,
+.command-icon-item:focus {
     cursor: pointer;
     color: #ffffff;
     background-color: var(--second-lnk-color);
@@ -354,6 +356,7 @@ body {
     width: 20px;
     height: 20px;
     margin: 27.27%;
+    fill: currentColor;
 }
 
 
@@ -387,17 +390,13 @@ body {
 .cust-icons {
     width: 106px;
     height: 60px;
-    /* fill: currentColor; */
-    /* color: #afb1b8; */
+    fill: #afb1b8;
     margin-top: 16px;
     margin-left: 32px;
-    /* align-items: center;
-    justify-content: center; */
 }
 
 .customers-item:hover,
 .customers-item:focus {
-    fill: #2196f3;
     border-color: #2196f3;
     cursor: pointer;
 }
@@ -428,6 +427,7 @@ body {
     color: var(--first-title-color);
     background-color: #f5f4fa;
     border: none;
+    border-radius: 4px;
 }
 
 .filter-btn:hover,
@@ -566,8 +566,10 @@ body {
     border-radius: 50%;
 }
 
-.flinks-item:hover .flinks-item:focus {
+.flinks-item:hover,
+.flinks-item:focus {
     background-color: var(--second-lnk-color);
+    cursor: pointer;
 }
 
 .flink-icon {
