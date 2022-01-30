@@ -1,7 +1,7 @@
 :root {
     --header-list-color: #212121;
     --first-btn-color: ;
-    --second-btn-color: ;
+    --second-lnk-color: #2196F3;
     --first-title-color: #212121;
     --second-title-color: #ffffff;
     --first-text-color: #757575;
@@ -150,7 +150,7 @@ body {
     padding-bottom: 200px;
     margin: 0 auto;
     background-color: #c4c4c4;
-    background-image: url(../images/бэкфон.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/бэкфон.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -329,22 +329,31 @@ body {
     display: flex;
 }
 
-.command-icons {
-    display: inline-flex;
+.command-icons-list {
+    display: flex;
     margin-left: 32px;
     margin-right: 32px;
     margin-top: 16px;
-    align-items: center;
+    justify-content: center;
 }
 
 .command-icon {
     width: 44px;
     height: 44px;
+    border-radius: 50%;
+}
+
+.command-icon:hover,
+.command-icon:focus {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: var(--second-lnk-color);
 }
 
 .c-icon {
     width: 20px;
     height: 20px;
+    margin: 27.27%;
 }
 
 
@@ -428,7 +437,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #ffffff;
-    background-color: #2196f3;
+    background-color: var(--second-lnk-color);
 }
 
 .projects-list {
@@ -546,7 +555,7 @@ body {
 }
 
 .flinks-list {
-    display: inline-flex;
+    display: flex;
 }
 
 .flinks-item {
@@ -555,6 +564,10 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     margin-left: 10px;
     border-radius: 50%;
+}
+
+.flinks-item:hover .flinks-item:focus {
+    background-color: var(--second-lnk-color);
 }
 
 .flink-icon {
