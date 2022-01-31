@@ -106,6 +106,7 @@ body {
     width: 16px;
     height: 12px;
     fill: currentColor;
+    margin-right: 10px;
 }
 
 .header-mail:hover,
@@ -119,7 +120,7 @@ body {
 }
 
 .header-tel {
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 .current {
@@ -342,6 +343,8 @@ body {
 
 .command-icon {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     color: #afb1b8;
@@ -358,7 +361,6 @@ body {
 .c-icon {
     width: 20px;
     height: 20px;
-    margin: 27.27%;
     fill: currentColor;
 }
 
@@ -381,27 +383,28 @@ body {
     margin-left: 30px;
 }
 
-.customers-item {
+.cust-link {
+    display: flex;
     width: 170px;
     height: 92px;
-    /* color: #afb1b8; */
     box-sizing: border-box;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    color: #afb1b8;
+}
+
+.cust-link:hover,
+.cust-link:focus {
+    border-color: #2196f3;
+    color: #2196f3;
 }
 
 .cust-icons {
     width: 106px;
     height: 60px;
-    fill: #afb1b8;
+    fill: currentColor;
     margin-top: 16px;
     margin-left: 32px;
-}
-
-.customers-item:hover,
-.customers-item:focus {
-    border-color: #2196f3;
-    cursor: pointer;
 }
 
 
@@ -469,6 +472,9 @@ body {
 
 .img-title {
     margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
 }
 
 .projects-item>.img-title {
@@ -502,11 +508,25 @@ body {
     padding-bottom: 60px;
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer .nav-logo {
     color: #ffffff;
 }
 
-.footer-list a {
+.nav-logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+
+.footer-item a {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 1.71;
@@ -543,6 +563,11 @@ body {
     margin-top: 9px;
 }
 
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
 .ftitle {
     margin-bottom: 20px;
     font-size: 14px;
@@ -561,17 +586,10 @@ body {
     display: flex;
 }
 
-
-/* .flinks-item {
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-left: 10px;
-    border-radius: 50%;
-} */
-
 .flink {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -584,16 +602,8 @@ body {
     background-color: var(--second-lnk-color);
 }
 
-
-/* .flinks-item:hover,
-.flinks-item:focus {
-    background-color: var(--second-lnk-color);
-    cursor: pointer;
-} */
-
 .flink-icon {
     width: 20px;
     height: 20px;
     fill: #ffffff;
-    margin: 27.27%;
 }
