@@ -1,7 +1,7 @@
 :root {
     --header-list-color: #212121;
     --first-btn-color: ;
-    --second-lnk-color: #2196F3;
+    --second-lnk-color: #2196f3;
     --first-title-color: #212121;
     --second-title-color: #ffffff;
     --first-text-color: #757575;
@@ -151,7 +151,7 @@ body {
     padding-bottom: 200px;
     margin: 0 auto;
     background-color: #c4c4c4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/бэкфон.jpg);
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/бэкфон.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -334,20 +334,29 @@ body {
     justify-content: center;
 }
 
-.command-icon-item {
+
+/* .command-icon-item {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     color: #afb1b8;
-}
+} */
 
 .command-icon-item+.command-icon-item {
     margin-left: 10px;
 }
 
-.command-icon-item:hover,
-.command-icon-item:focus {
-    cursor: pointer;
+.command-icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    color: #afb1b8;
+    border-color: #afb1b8;
+    border-radius: 50%;
+}
+
+.command-icon:hover,
+.command-icon:focus {
     color: #ffffff;
     background-color: var(--second-lnk-color);
 }
